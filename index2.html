@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithril-Healthcare </title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f9fc;
+        }
+
+        /* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: linear-gradient(to right, #6ad0f1, #ffffff); /* Gradient background */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #27414e; /* Dark Blue */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #27414e; /* Dark Blue */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #05bbfb; /* Bright Blue */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border: 1px solid rgba(39, 65, 78, 0.5); /* Slight border */
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-bar button {
+    background: #05bbfb; /* Bright Blue */
+    border: none;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #23556a; /* Darker shade */
+}
+
+        .contact-info {
+            font-size: 0.9em;
+        }
+
+        .contact-info span {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #6ad0f1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #05bbfb;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #6ad0f1, #ffffff);
+           
+            padding: 100px 50px;
+        }
+
+        .hero .content {
+            max-width: 50%;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .hero .btn {
+            background: #27414e;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            background: #23556a;
+        }
+
+        .hero img {
+            max-width: 40%;
+            border-radius: 10px;
+        }
+
+        /* Service Selection */
+        .service-selection {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px 50px;
+            background: #ffffff;
+        }
+
+        .service-selection select {
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        /* Footer */
+        footer {
+            background: #27414e; /* Dark Accent */
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #6ad0f1;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #05bbfb;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="logo.png" alt="Logo" style="height: 40px;">
+        <span>Mithril-Healthcare </span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index2.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button><i class="fas fa-search"></i></button>
+    </div>
+</nav>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="content">
+            <h1>Personal Care for Your Healthy Living</h1>
+            <p>Dedicated to providing you with the care you deserve, wherever you are. Your health, our priority.</p>
+            <a href="services.html" class="btn">Explore now</a>
+          
+        </div>
+        <img src="Doctor3.png" alt="Doctor">
+    </section>
+
+    <!-- Service Selection -->
+    <section class="service-selection">
+        <select>
+            <option>Select your area</option>
+            <option>New York</option>
+            <option>Los Angeles</option>
+            <option>Chicago</option>
+        </select>
+        <select>
+            <option>Select service type</option>
+            <option>Smart Diagnosis</option>
+            <option>Chronic Diseases Management</option>
+            <option>Emergency Care </option>
+        </select>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mithril-Healthcare. All Rights Reserved. <a href="#privacy">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
